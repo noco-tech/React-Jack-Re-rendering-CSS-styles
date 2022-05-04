@@ -1,6 +1,10 @@
 import { useState, useCallback, useMemo } from "react";
 import { ChildArea } from "./ChildArea";
+import { CssModules } from "./components/CssModules";
 import { InlineStyle } from "./components/InlineStyle";
+import { StyledJsx } from "./components/StyledJsx";
+import { StyledComponents } from "./components/StyledComponents";
+import { Emotion } from "./components/Emotion";
 import "./styles.css";
 
 export default function App() {
@@ -26,6 +30,10 @@ export default function App() {
       <button onClick={onClickOpen}>表示</button>
       <ChildArea open={open} close={onClickClose} />
       <InlineStyle />
+      <CssModules />
+      <StyledJsx />
+      <StyledComponents />
+      <Emotion />
     </div>
   );
 }
